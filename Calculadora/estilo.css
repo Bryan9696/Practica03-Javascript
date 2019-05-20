@@ -1,0 +1,37 @@
+html{
+    background-color: cornflowerblue;
+}
+
+h1{
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+#formularioCalculadora{
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#formularioCalculadora input{
+    width: 20%;
+    height: 60px;
+    color: red;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#formularioCalculadora input:hover{
+    background-color: beige; 
+}
+#txtResultado{
+    background-color: black;
+    color: red;
+    font-size: 1em;
+}
+
+hr{
+    width: 50%;
+}
