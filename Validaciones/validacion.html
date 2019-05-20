@@ -2,7 +2,7 @@
 <html>
 <head>
  <meta charset="UTF-8">
- <script type="text/javascript" src="validaciones_usuario.js"></script>
+ <script type="text/javascript" src="validacion.js"></script>
  <link href="estilo.css" rel="stylesheet" type="text/css">
 
 
@@ -48,13 +48,13 @@
  <br>
  <label for="fecha">Fecha Nacimiento (*)</label>
  <input type="text" id="fechaNacimiento" class="form-input"  name="fechaNacimiento" value="" placeholder="Ingrese su
-fecha de nacimiento ..." />
+fecha de nacimiento ..."  />
 <span id="mensajeFecha"  ></span>
 
  <br>
  <label for="correo">Correo electrónico (*)</label>
  <input type="text" id="correo" class="form-input" name="correo" value="" placeholder="Ingrese su correo electrónico
-..."  onkeyup="validar(event)"  />
+..."  onkeyup="validar_correo(event)"  />
 <span id="mensajeCorreo" ></span>
 
  <br>

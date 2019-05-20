@@ -44,7 +44,7 @@ function validarNumeros(num){
           var apellido = window.document.getElementById("apellidos");
           
               //valida que el campo no contenga numeros 
-           if(expre.test(apellido.value)==true){
+           if(cont.test(apellido.value)==true){
              
             apellido.style.borderColor ="red";
             valApellido = false;
@@ -53,7 +53,7 @@ function validarNumeros(num){
            apellido.value=rempla;
       }
           //valida que el campo tenga el formato solicitado
-          else if (expreL.test(apellido.value)==true){
+          else if (n.test(apellido.value)==true){
           apellido.style.borderColor ="blue";
           valApellido = true;
       }
@@ -131,7 +131,7 @@ function validarNumeros(num){
             var conte=contenido.split("@");
             if(!conte[1] || conte[0]=="")
             {
-              alert('no es correo valido(1)');
+            // alert('no es correo valido(1)');
             }
             else
             {
@@ -139,7 +139,7 @@ function validarNumeros(num){
               var cont2=conte[1].split(".");
               if(!cont1[1])
               {
-                alert('no es correo valido(2)');
+             //  alert('no es correo valido(2)');
               }
               else if(!cont2[1])
               {
