@@ -149,4 +149,87 @@ function validarNumeros(num){
           }
 
 
+          
+
+function validaTodo(formulario01){
+    var verdad = false;
+
+    if(valCedula==false){
+        window.document.getElementById("mensajeCedula").innerHTML = "<p>Cedula Incorrecta</p>"
+        console.info("revise los digitos");
+       
+        
+    }
+    else{
+         window.document.getElementById("mensajeCedula").innerHTML = "<p></p>"
+        
+    }
+    if(valNombre==false){
+        window.document.getElementById("mensajeNombres").innerHTML = "<p>Nombres mal Ingresados</p>"
+        console.info("revise los digitos");
+       
+        
+    }
+    else{
+         window.document.getElementById("mensajeNombres").innerHTML = "<p></p>"
+       
+    }
+    if(valApellido==false){
+        window.document.getElementById("mensajeApellidos").innerHTML = "<p>Apellidos mal  Ingresados</p>"
+        console.info("revise los digitos");
+         
+        
+    }
+    else{
+         window.document.getElementById("mensajeApellidos").innerHTML = "<p></p>"
+        
+        
+    }
+    if(valDirreccion==false){
+        window.document.getElementById("mensajeDireccion").innerHTML = "<p>Direccion Incorecta</p>"
+        console.info("revise los digitos");
+         
+        
+        
+    }
+    else{
+         window.document.getElementById("mensajeDireccion").innerHTML = "<p></p>"
+       
+    }
+    if(valTelefono==false){
+        window.document.getElementById("mensajeTelefono").innerHTML = "<p>Telefono mal ingresada</p>"
+        console.info("revise los digitos");
+        
+        
+    }
+    else{
+ window.document.getElementById("mensajeTelefono").innerHTML = "<p></p>"
+
+    }
+    if(valFecha==false){
+        window.document.getElementById("mensajeFecha").innerHTML = "<p>Fecha mal ingresada</p>"
+
+    }else{
+        window.document.getElementById("mensajeFecha").innerHTML = "<p></p>"
+
+    }
+
+    if(valEmail==false){
+        windows.document.getElementById('mensajeCorreo').innerHTML="<p>Correo  incorrecta</p>"
+        console.info("revise los digitos");
+
+    }else{
+        window.document.getElementById('mensajeCorreo').innerHTML="<p></p>"
+    }
+    if(valContrasenia==false){
+        windows.document.getElementById('mensajeContrasena').innerHTML="<p>Contrasena incorrecta</p>"
+        console.info("revise los digitos");
+    }else{
+        window.document.getElementById('mensajeContrasena').innerHTML="<p></p>"
+    }
+
+    
+}
+ 
+
     
