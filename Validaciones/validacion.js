@@ -125,5 +125,28 @@ function validarNumeros(num){
             
         }
 
-        
+        function validar_correo()
+        {
+            var contenido=document.getElementById('correo').value;
+            var conte=contenido.split("@");
+            if(!conte[1] || conte[0]=="")
+            {
+              alert('no es correo valido(1)');
+            }
+            else
+            {
+              var cont1=conte[0].split(".");
+              var cont2=conte[1].split(".");
+              if(!cont1[1])
+              {
+                alert('no es correo valido(2)');
+              }
+              else if(!cont2[1])
+              {
+                alert('no es correo valido(3)');
+              }
+            }
+          }
+
+
     
