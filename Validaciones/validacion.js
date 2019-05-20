@@ -85,3 +85,45 @@ function validarNumeros(num){
                  }
         
         }
+
+        function validaCedula(num){
+    
+            tecla = num.keyCode | num.which;
+             var cadena = window.document.getElementById("cedula").value.trim();
+             cedula.style.borderColor ="none";
+             
+                var total = 0;
+                var longitud = cadena.length;
+                var verificador = longitud - 1;
+        
+              
+                  for(i = 0; i < verificador; i++){
+                    if (i%2 === 0) {
+                      var aux = cadena.charAt(i) * 2;
+                      if (aux > 9) aux -= 9;
+                      total += aux;
+                    } else {
+                      total += parseInt(cadena.charAt(i)); 
+                    }
+                  }
+        
+                  total = total % 10 ? 10 - total % 10 : 0;
+        
+             
+            
+                  if (cadena.charAt(longitud-1) == total && longitud==10) {
+            
+                    console.info("cedula Valida" );
+                      cedula.style.borderColor ="blue";
+                      valCedula=true;
+                  }else if(longitud!=10){
+                    console.info("cedula invalida" );
+                      cedula.style.borderColor ="red";
+                      valCedula = false;
+                     
+                  }
+            
+        }
+
+        
+    
